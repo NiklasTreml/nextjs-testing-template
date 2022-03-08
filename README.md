@@ -1,34 +1,117 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextjs-template
 
-## Getting Started
+## Features
 
-First, run the development server:
+- End-to-End testing with [cypress](https://github.com/cypress-io/cypress)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Unit-testing with [jest](https://github.com/facebook/jest) and [react-testing-library](https://github.com/testing-library/react-testing-library)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Linting with [eslint](https://github.com/eslint/eslint)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- [TypeScript](https://github.com/microsoft/TypeScript) enabled
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- uses yarn for package management, but can also be replaced by npm
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Scripts
 
-## Learn More
+The following describes all the scripts included with the template.
 
-To learn more about Next.js, take a look at the following resources:
+### dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Starts a development server on https://localhost:3000 with hot reloading enabled.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`yarn run dev`
 
-## Deploy on Vercel
+or
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`npm run dev`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### build
+
+Builds the project ready for production.
+
+`yarn run build`
+
+or
+
+`npm run build`
+
+### start
+
+Runs the production project. **Must** run build before.
+
+`yarn run start`
+
+or
+
+`npm run start`
+
+### lint
+
+Runs eslint with the provided config on the project. By default the standard NextJs config will be used.
+
+`yarn run lint`
+
+or
+
+`npm run lint`
+
+### cypress
+
+Runs the cypress interactive test runner in a browser window. Useful for testing while developing.
+
+`yarn run cypress`
+
+or
+
+`npm run cypress`
+
+### cypress:headless
+
+Runs cypress without starting a browser window. Can be used in CI environments.
+
+`yarn run cypress:headless`
+
+or
+
+`npm run cypress:headless`
+
+### e2e
+
+Runs the project on the local system and then starts the interactive cypress runner.
+
+`yarn run e2e`
+
+or
+
+`npm run e2e`
+
+### e2e:headless
+
+Runs the projet on the local system and then runs all cypress test-suites without opening an interactive session
+
+`yarn run e2e:headless`
+
+or
+
+`npm run e2e:headless`
+
+### test:watch
+
+Runs jest in watch mode. This will rerun test suite on file changes
+
+`yarn run test:watch`
+
+or
+
+`npm run test:watch`
+
+### test
+
+Runs jest test suites
+
+`yarn run test`
+
+or
+
+`npm run test`

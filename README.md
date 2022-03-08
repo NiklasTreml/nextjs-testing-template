@@ -10,7 +10,7 @@
 
 - [TypeScript](https://github.com/microsoft/TypeScript) enabled
 
-- uses yarn for package management, but can also be replaced by npm
+- uses [yarn](https://github.com/yarnpkg/yarn) for package management, but can also be replaced by npm
 
 ## Scripts
 

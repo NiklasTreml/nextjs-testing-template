@@ -1,4 +1,4 @@
-# nextjs-template
+# nextjs-testing-template
 
 ## Features
 
